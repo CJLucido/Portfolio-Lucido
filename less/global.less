@@ -1,0 +1,188 @@
+*{
+    box-sizing: border-box;
+    border: 1px solid black;
+
+}
+
+
+
+html {
+    font-size: 62.5%;
+    height: 100vh;
+    border: none;
+    .noBorder();
+  }
+  
+  h2 {
+    font-size: 3.2rem;
+    padding-bottom: 10px;
+  }
+  
+  h4 {
+    font-size: 2.5rem;
+    padding-bottom: 10px;
+  }
+  
+  p {
+    line-height: 1.5;
+    font-size: 1.6rem;
+    padding-bottom: 10px;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .container {
+    .display(row, space-between, center);
+    height: 100vh;
+    @media @tablet {
+      display: flex;
+      flex-direction: column;
+      height: 1200px;
+    }
+    @media @phone {
+      display: flex;
+      flex-direction: column;
+      height: 1000px;
+    }
+  }
+  
+  a {
+    color: black;
+    text-decoration: none;
+  }
+
+
+  ///////////////////////////////////////PAGE DISPLAY/////////////////////////////
+
+  /////////////////////BACKGROUND//////////////////
+  
+
+  .background{
+    width: 100%;
+    z-index: -10;
+    height: 100%;
+    position: relative;
+    .noBorder();
+
+  }
+///////////////////////FOREGROUND//////////////////////
+
+.home-page {
+
+  .display(column, center, center);
+  position: relative;
+  height: 105vh;
+      .home-img{
+      .backgroundPic(center, cover, 1);
+      }
+  
+      h2 {
+        .foregroundText();
+        opacity: 0.67;
+        z-index: 3;
+        width: 60vw;
+        height: 33vh;
+        color: #f0eded;
+        font-family: Cambria;
+        font-size: 4vw;
+        font-weight: 700;
+        line-height: 8vw;
+        text-align: center;
+    }
+}
+
+.about-page{
+
+  .display(row, flex-start, center);
+  flex-wrap: nowrap;
+  position: relative;
+  height: 105vh;
+      img{
+      .backgroundPic(center, cover,.83);
+      }
+  
+
+      h1 {
+        .foregroundText();
+        align-self: flex-start;
+        font-size: 4vw;
+        transform: translateY(27vh);
+        margin-left: 15%;
+        margin-right:40%;
+        width:80%;
+        border-bottom: .5vh solid black;
+      }
+
+      h2{
+        .foregroundText();
+        margin-left:55%;
+        transform: translateY(-20vh);
+        color: @missionText;
+    }
+
+    p{
+      .foregroundText();
+      width:35%;
+      text-align: center;
+      margin-left: 60%;
+      color: @aboutText;
+      font-size: 1.5vw;
+    }
+
+  
+}
+
+.repo-page {
+
+  .noBorder();
+  background-clip: border-box;
+  height: 105vh;
+      img{
+        .noBorder();
+        
+      .backgroundPic(center, cover,.76);
+      // object-fit: fill;//neither of these appear to be effective in this case
+      }
+  
+      h1 {
+        .foregroundText();
+        align-self: flex-start;
+        font-size: 4vw;
+        transform: translateY(27vh);
+        margin-left: 15%;
+        margin-right:40%;
+        width:80%;
+        border-bottom: .5vh solid black;
+      }
+      
+      h2{
+      .foregroundText();
+    }
+}
+
+.past-page {
+
+  .noBorder();
+  background-clip: border-box;
+  height: 105vh; //fixes white space between background images and makes it so images don't have to overlap on one page view
+      img{
+        .noBorder();
+      .backgroundPic(center, contain,.58);
+     // object-fit: scale;//neither of these appear to be effective in this case
+      }
+
+  
+      h1{
+      .foregroundText();
+      align-self: flex-start;
+      font-size: 4vw;
+      transform: translateY(27vh);
+      margin-left: 15%;
+      margin-right:40%;
+      width:80%;
+      border-bottom: .5vh solid black;
+    }
+}

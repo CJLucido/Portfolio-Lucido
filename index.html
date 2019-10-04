@@ -1,0 +1,234 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <!-- Boot strap is mobile first, requires shrink to fit in viewport -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+  <title>Portfolio Lucido</title>
+  <!-- BootStrap CDN link here -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- Google fonts here -->
+  <link href="https://fonts.googleapis.com/css?family=Bangers|Titillium+Web" rel="stylesheet">
+  <link rel="stylesheet" href="css/index.css">
+
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+  <script src="js/index.js" async></script>
+</head>
+
+<body>
+
+    <div class="total-container">
+
+        <header>
+            <nav class="navBar">
+                <a class="navItem" href="#">Home</a>
+                <a class="navItem" href="#aboutAnchor">About</a>
+                <a class="navItem" href="#repoAnchor">Repositories</a>
+                <a class="navItem" href="#pastAnchor">Past Positions</a>
+            </nav>
+        </header>
+
+        <section class="home-page">
+            <img id="home-img" class="background" src="img\NorthCarolina-min1.jpg" alt="An image of western North Carolina">
+            <h2>Welcome to the portfolio of<br> Carlo Lucido</h2>
+        </section>
+
+        <section id="aboutAnchor" class="about-page">
+            
+            <img class="background" id="about-img" src="img\Montana-min1.jpg" alt="Image of Montana prairie and reservoir">
+            <h1>About Carlo</h1>
+            <h2 class="mission">There is so much good work to be done.</h2>
+            <p >My girlfriend and I love to camp, the image in the background was our quest for ruby reserve in Montana. We believe we found it but didn't know what a raw ruby looked like at the time! When we aren't travelling we enjoy spending time at our homebase in Swannanoa, NC or on our small live-aboard in Vancouver, BC. </p>
+        </section>
+
+        <section id="repoAnchor" class="repo-page">
+            <h1>Repositories</h1>
+            <img class="background" id="repo-img" src="img\Michigan-min1.jpg" alt="Image of a historic Michigan covered bridge">
+        </section>
+
+        <section id="pastAnchor" class="past-page">
+                <h1>Past Positions</h1>
+                <img class="background" id="past-img" src="img\Kentucky-min1.jpg" alt="Image of a historic area in Kentucky">
+        </section>
+
+        <footer>
+            <section class="learning">
+                <img id= "#book" src="img\learnBtn.png"  alt="PNG of circle with a book icon">
+                                <!-- The Modal -->
+                    <div id="learnModal" class="modal">
+
+                            <!-- Modal content -->
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <span class="popupText" id="learnPop">
+                            <h3 class="learnHeader">Learning:</h3>
+                            <div id ="my-slider" class="carousel slide" data-ride="carousel">
+                                    <!-- indicators dot nav (how many slides there are) -->
+                                      <ol class="carousel-indicators">
+                                          <li data-target="#my-slider" data-slide-to="0" class="active"></li>
+                                          <li data-target="#my-slider" data-slide-to="1"></li>
+                                          <li data-target="#my-slider" data-slide-to="2"></li>
+                                      </ol>
+                                    <!-- wrapper for slides -->
+                                      <div class="carousel-inner" role="listbox">
+                                        <div class="itemLearn active"> 
+                                          <!-- first slide  -->
+                                          <img src="img\React-logo.png" alt="Person Picture" />        
+                                        </div>
+                                        <!-- second slide -->
+                                        <div class="itemLearn"> 
+                                           
+                                            <img src="img\icon-192x192.png" alt="Person Picture" />    
+                                          </div>
+                                        <!-- third slide -->
+                                        <div class="itemLearn"> 
+                                            
+                                            <img src="img\NodeJS-logo.png" alt="Person Picture" />      
+                                          </div>
+                                      </div>
+                                    <!-- navigation/controls/next&prev (left and right buttons)   aria-hidden hides the arrow when not hovering over it-->
+                                      <a class="left carousel-control" href="#my-slider" role="scroll button" data-slide="prev">
+                                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                        <span class="sr-only">Previous</span> 
+                                      </a>
+                                      <a class="right carousel-control" href="#my-slider" role="scroll button" data-slide="next">
+                                          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                          <span class="sr-only">Next</span> 
+                                        </a>
+                                    <div> 
+                                        <!-- End of Slider for Learning -->
+                            </span>
+                        </div>
+                        </div>
+                        <!-- Modal content -->
+            </section>
+            <!-- end of learning section -->
+            <section class="profile">
+                    <img src="img\Carlo-Lucido.jpg" alt="PNG of circle with profile Picture">
+                                    <!-- The Modal -->
+                        <div id="profileModal" class="modal">
+    
+                                <!-- Modal content -->
+                            <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <span class="popupText" id="profilePop">
+                                <h3 class="profileHeader">Find Me:</h3>
+                                <div id ="my-slider" class="carousel slide" data-ride="carousel">
+                                        <!-- indicators dot nav (how many slides there are) -->
+                                          <ol class="carousel-indicators">
+                                              <li data-target="#my-slider" data-slide-to="0" class="active"></li>
+                                              <li data-target="#my-slider" data-slide-to="1"></li>
+                                              <li data-target="#my-slider" data-slide-to="2"></li>
+                                              <li data-target="#my-slider" data-slide-to="3"></li>
+                                          </ol>
+                                        <!-- wrapper for slides -->
+                                          <div class="carousel-inner" role="listbox">
+                                            <div class="itemLearn active"> 
+                                              <!-- first slide  -->
+                                              <img src="img\linkedin-outline.png" alt="Person Picture" />        
+                                            </div>
+                                            <!-- second slide -->
+                                            <div class="itemLearn"> 
+                                               
+                                                <img src="img\google-outline.png" alt="Person Picture" />    
+                                              </div>
+                                            <!-- third slide -->
+                                            <div class="itemLearn"> 
+                                                
+                                                <img src="img\facebook-outline.png" alt="Person Picture" />      
+                                              </div>
+                                               <!-- fourth slide -->
+                                            <div class="itemLearn"> 
+                                                
+                                                    <img src="img\twitter-outline.png" alt="Person Picture" />      
+                                                  </div>
+                                          </div>
+                                        <!-- navigation/controls/next&prev (left and right buttons)   aria-hidden hides the arrow when not hovering over it-->
+                                          <a class="left carousel-control" href="#my-slider" role="scroll button" data-slide="prev">
+                                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                            <span class="sr-only">Previous</span> 
+                                          </a>
+                                          <a class="right carousel-control" href="#my-slider" role="scroll button" data-slide="next">
+                                              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                              <span class="sr-only">Next</span> 
+                                            </a>
+                                        <div> 
+                                            <!-- End of Slider for Learning -->
+                                </span>
+                            </div>
+                            </div>
+                            <!-- Modal content -->
+                </section>
+        <!-- End of profile section -->
+        </footer>
+
+    </div><!-- End of total-container -->
+
+
+
+<!-- jQuery, popper, and bootstrap plugins -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>  
+    <script>
+            ///////////////// Get the modal
+            var modal = document.getElementById("learnModal"); //points to the actual modal
+            var modal2 = document.getElementById("profileModal");
+
+      
+            // Get the button that opens the modal
+            var btn = document.getElementById("learnPop");//points to the span div
+            var btn2 = document.getElementById("profilePop");
+
+      
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];//points to the "x" (&times as x because it symbolizes multiplication), the close class and pulls up the empty span (the modal reverts to hidden)
+            var span2 = document.getElementsByClassName("close")[1];
+
+      
+            // When the user clicks on the button, open the modal
+            btn.onclick = function() {
+              modal.style.display = "block";
+              modal2.style.display = "none";
+//may have to put something here to display none on any modals that are the result of a Fn component
+            }
+            btn2.onclick = function() {
+              modal2.style.display = "block";
+              modal.style.display = "none";
+//may have to put something here to display none on any modals that are the result of a Fn component
+            }
+
+      
+            // When the user clicks on <span> (x), close the modal
+            // span.onclick = function() {
+            //   modal.style.display = "none";
+      
+            // }
+            // span2.onclick = function() {
+            //   modal2.style.display = "none";
+      
+            // }
+
+///DONT USE SPAN X IF YOU CAN HELP IT
+      
+            // When the user clicks anywhere outside of the modal, close it  (the target is the modal itself, not the hidden content)
+            window.onclick = function(event) {
+              if (event.target == modal) {
+                modal.style.display = "none";
+              } else if (event.target == modal2) {
+                modal2.style.display = "none";
+              } 
+            }
+      
+            //when user clicks a tag closes modal
+      
+            
+         
+          </script>
+
+</body>
+</html>

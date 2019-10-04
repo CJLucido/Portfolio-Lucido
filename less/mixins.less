@@ -1,0 +1,32 @@
+.display(@direction, @justify, @align) {
+    display: flex;
+    flex-direction: @direction;
+    justify-content: @justify;
+    align-items: @align;
+  }
+  
+  .noBorder(){
+    border: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .backgroundPic(@backgroundPos, @backgroundSize, @opacity){
+    background-position: @backgroundPos;
+    background-size: @backgroundSize;
+    opacity: @opacity;
+  }
+
+  .footee(@background) {
+      z-index: 3;//third highest after foreground text and navigation
+      position: fixed;
+      width: 339px;//change to vw and vh
+      height: 276px;
+      border-radius: 92px;
+      background-color: @background;
+    }
+  
+  .foregroundText(){
+    z-index: 4;
+    position: absolute;
+  }
